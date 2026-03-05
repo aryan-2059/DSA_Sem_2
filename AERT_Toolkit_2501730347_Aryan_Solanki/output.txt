@@ -1,0 +1,35 @@
+Ouptut of aert_toolkit.py
+
+PS C:\Users\Aryan\OneDrive\Documents\College\Sem-2\DSA\Code> python aert_toolkit.py
+Top element: 3
+Stack size: 3
+Factorial of 0: 1
+Factorial of 1: 1
+Factorial of 5: 120
+Factorial of 12: 479001600
+
+Fibonacci (naive) of 10: 55
+Naive Fibonacci calls: 177
+
+Fibonacci (naive) of 20: 6765
+Naive Fibonacci calls: 21891
+
+Fibonacci (memoized) of 10: 55
+Memoized Fibonacci calls: 19
+
+Fibonacci (memoized) of 20: 6765
+Memoized Fibonacci calls: 21
+Tower of Hanoi for 3 disks and rods A, B, C:
+Move disk 1 from A to C
+Move disk 2 from A to B
+Move disk 1 from C to B
+Move disk 3 from A to C
+Move disk 1 from B to A
+Move disk 2 from B to C
+Move disk 1 from A to C
+Array:  [1, 3, 5, 7, 9, 11, 13]
+3
+0
+6
+-1
+-1
