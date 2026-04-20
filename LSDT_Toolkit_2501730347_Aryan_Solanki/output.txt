@@ -1,0 +1,158 @@
+Testing Dynamic Array...
+
+[Test 1.1] Start with capacity=2, append 10+ items
+Element added!
+Element added!
+Length exceeded.
+Extending capacity...
+Element added!
+Element added!
+Length exceeded.
+Extending capacity...
+Element added!
+Element added!
+Element added!
+Element added!
+Length exceeded.
+Extending capacity...
+Element added!
+Element added!
+Array:
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+[Test 1.2] Pop 3 elements
+9
+8
+7
+Array:
+[0, 1, 2, 3, 4, 5, 6]
+
+Testing Singly Linked List...
+
+[Test 2A.1] Insert 3 at beginning
+List:  [30, 20, 10]
+
+[Test 2A.2] Insert 3 at end
+List:  [30, 20, 10, 40, 50, 60]
+
+[Test 2A.3] Delete value 20
+List:  [30, 10, 40, 50, 60]
+
+[Test 2A.4] Delete head (30)
+List:  [10, 40, 50, 60]
+
+[Test 2A.5] Delete non-existent value (99)
+Element not found
+List:  [10, 40, 50, 60]
+
+Testing Doubly Linked List...
+
+[Test 2B.1] Initial list
+List:  [10, 20, 30, 40, 50]
+
+[Test 2B.2] Insert 25 after node with value 20
+Element added!
+List:  [10, 20, 25, 30, 40, 50]
+
+[Test 2B.3] Insert after last node (50)
+Element added!
+List:  [10, 20, 25, 30, 40, 50, 99]
+
+[Test 2B.4] Delete at position 1 (0-based)
+Element deleted!
+List:  [10, 25, 30, 40, 50, 99]
+
+[Test 2B.5] Delete at position 0 (head)
+Element deleted!
+List:  [25, 30, 40, 50, 99]
+
+[Test 2B.6] Delete last element (by going to last index)
+Element deleted!
+List:  [25, 30, 40, 50]
+
+Testing Stack...
+
+[Test 3A.1] Push 10, 20, 30
+Element added!
+Element added!
+Element added!
+Top element: 30
+  Peek (top): None
+
+[Test 3A.2] Pop twice
+Element popped: 30
+  Popped: None
+Element popped: 20
+  Popped: None
+Top element: 10
+  Peek now: None
+
+[Test 3A.3] Underflow test
+Element popped: 10
+UNDERFLOW :/
+
+Testing Queue...
+
+[Test 3B.1] Enqueue 1, 2, 3
+Element added!
+Element added!
+Element added!
+Front element: 1
+  Front: None
+
+[Test 3B.2] Dequeue twice
+Element dequeued: 1
+  Dequeued: None
+Element dequeued: 2
+  Dequeued: None
+Front element: 3
+  Front now: None
+
+[Test 3B.3] Underflow test
+Element dequeued: 3
+UNDERFLOW :/
+
+Testing Balanced Parentheses...
+
+[Test 4.1] Expression: '()'
+Element added!
+Element popped: (
+  Balanced? True
+
+[Test 4.1] Expression: '([])'
+Element added!
+Element added!
+Element popped: [
+Element popped: (
+  Balanced? True
+
+[Test 4.1] Expression: '{[()]'
+Element added!
+Element added!
+Element added!
+Element popped: (
+Element popped: [
+  Balanced? False
+
+[Test 4.1] Expression: '((())'
+Element added!
+Element added!
+Element added!
+Element popped: (
+Element popped: (
+  Balanced? False
+
+[Test 4.1] Expression: '({)}'
+Element added!
+Element added!
+  Balanced? False
+
+[Test 4.1] Expression: '([)]'
+Element added!
+Element added!
+  Balanced? False
+
+[Test 4.1] Expression: ''
+  Balanced? True
+
+All tests completed!
