@@ -1,0 +1,14 @@
+class BloomFilter:
+    def __init__(self, size):
+        self.bit_array = [0] * size
+    def add(self, item):
+        idx1 = hash(item) % len(self.bit_array)
+        idx2 = (hash(item) // 7) % len(self.bit_array)
+        self.bit_array[idx1] = 1
+        self.bit_array[idx2] = 1
+    def check(self, item):
+        idx1 = hash(item) % len(self.bit_array)
+        idx2 = (hash(item) // 7) % len(self.bit_array)
+        return self.bit_array[idx1] == 1 and self.bit_array[idx2] == 1
+
+bf = BloomFilter(20); bf.add("test"); print(bf.check("test"))
